@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		969E8CF92775DD4700EFD90F /* CGMetalOS.docc in Sources */ = {isa = PBXBuildFile; fileRef = 969E8CF72775DD4600EFD90F /* CGMetalOS.docc */; };
+		969E8CFA2775DD4700EFD90F /* CGMetalOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 969E8CF82775DD4600EFD90F /* CGMetalOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		96BF18C927917A6C0005D1D4 /* CGMetalBufferProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF183F27917A6B0005D1D4 /* CGMetalBufferProvider.h */; };
+		96BF18CA27917A6C0005D1D4 /* CGMetalDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184027917A6B0005D1D4 /* CGMetalDevice.m */; };
+		96BF18CB27917A6C0005D1D4 /* CGMetalQueueContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184127917A6B0005D1D4 /* CGMetalQueueContext.m */; };
+		96BF18CC27917A6C0005D1D4 /* MTLMetalCompute.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184227917A6B0005D1D4 /* MTLMetalCompute.m */; };
+		96BF18CD27917A6C0005D1D4 /* CGMetalTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184327917A6B0005D1D4 /* CGMetalTexture.m */; };
+		96BF18CE27917A6C0005D1D4 /* CGMetalContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184427917A6B0005D1D4 /* CGMetalContext.h */; };
+		96BF18CF27917A6C0005D1D4 /* compute.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184527917A6B0005D1D4 /* compute.metal */; };
+		96BF18D027917A6C0005D1D4 /* CGMetalSourfaceTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184627917A6B0005D1D4 /* CGMetalSourfaceTexture.h */; };
+		96BF18D127917A6C0005D1D4 /* CGMetalRender.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184727917A6B0005D1D4 /* CGMetalRender.h */; };
+		96BF18D227917A6C0005D1D4 /* CGMetalBlit.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184827917A6B0005D1D4 /* CGMetalBlit.h */; };
+		96BF18D327917A6C0005D1D4 /* CGMetalOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184927917A6B0005D1D4 /* CGMetalOutput.m */; };
+		96BF18D427917A6C0005D1D4 /* CGMetalOutputter.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184A27917A6B0005D1D4 /* CGMetalOutputter.h */; };
+		96BF18D527917A6C0005D1D4 /* CGMetalQueueContext.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184B27917A6B0005D1D4 /* CGMetalQueueContext.h */; };
+		96BF18D627917A6C0005D1D4 /* CGMetalDevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184C27917A6B0005D1D4 /* CGMetalDevice.h */; };
+		96BF18D727917A6C0005D1D4 /* CGMetalInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF184D27917A6B0005D1D4 /* CGMetalInput.h */; };
+		96BF18D827917A6C0005D1D4 /* CGMetalBufferProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184E27917A6B0005D1D4 /* CGMetalBufferProvider.m */; };
+		96BF18D927917A6C0005D1D4 /* CGMetalSourfaceTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF184F27917A6B0005D1D4 /* CGMetalSourfaceTexture.m */; };
+		96BF18DA27917A6C0005D1D4 /* CGMetalTexture.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185027917A6B0005D1D4 /* CGMetalTexture.h */; };
+		96BF18DB27917A6C0005D1D4 /* CGMetalContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185127917A6B0005D1D4 /* CGMetalContext.m */; };
+		96BF18DC27917A6C0005D1D4 /* MTLMetalCompute.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185227917A6B0005D1D4 /* MTLMetalCompute.h */; };
+		96BF18DD27917A6C0005D1D4 /* CGMetalOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185327917A6B0005D1D4 /* CGMetalOutput.h */; };
+		96BF18DE27917A6C0005D1D4 /* CGMetalRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185427917A6B0005D1D4 /* CGMetalRender.m */; };
+		96BF18DF27917A6C0005D1D4 /* CGMetalBlit.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185527917A6B0005D1D4 /* CGMetalBlit.m */; };
+		96BF18E027917A6C0005D1D4 /* CGMetalOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185627917A6B0005D1D4 /* CGMetalOutputter.m */; };
+		96BF18E127917A6C0005D1D4 /* CGMetalPlayerInputMac.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185827917A6B0005D1D4 /* CGMetalPlayerInputMac.m */; };
+		96BF18E227917A6C0005D1D4 /* CGMetalVideoInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185927917A6B0005D1D4 /* CGMetalVideoInput.h */; };
+		96BF18E327917A6C0005D1D4 /* CGMetalPixelBufferInput.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185A27917A6B0005D1D4 /* CGMetalPixelBufferInput.metal */; };
+		96BF18E427917A6C0005D1D4 /* CGMetalOpenGLInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185B27917A6B0005D1D4 /* CGMetalOpenGLInput.h */; };
+		96BF18E527917A6C0005D1D4 /* CGMetalCameraInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185C27917A6B0005D1D4 /* CGMetalCameraInput.h */; };
+		96BF18E627917A6C0005D1D4 /* CGMetalRawDataInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF185D27917A6B0005D1D4 /* CGMetalRawDataInput.h */; };
+		96BF18E727917A6C0005D1D4 /* CGMetalTextureInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185E27917A6B0005D1D4 /* CGMetalTextureInput.m */; };
+		96BF18E827917A6C0005D1D4 /* CGMetalPixelBufferInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF185F27917A6B0005D1D4 /* CGMetalPixelBufferInput.m */; };
+		96BF18E927917A6C0005D1D4 /* CGMetalPlayerInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186027917A6B0005D1D4 /* CGMetalPlayerInput.h */; };
+		96BF18EA27917A6C0005D1D4 /* CGMetalImageInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186127917A6B0005D1D4 /* CGMetalImageInput.m */; };
+		96BF18EB27917A6C0005D1D4 /* CGMetalVideoInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186227917A6B0005D1D4 /* CGMetalVideoInput.m */; };
+		96BF18EC27917A6C0005D1D4 /* CGMetalPlayerInputMac.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186327917A6B0005D1D4 /* CGMetalPlayerInputMac.h */; };
+		96BF18ED27917A6C0005D1D4 /* CGMetalRawDataInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186427917A6B0005D1D4 /* CGMetalRawDataInput.m */; };
+		96BF18EE27917A6C0005D1D4 /* CGMetalCameraInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186527917A6B0005D1D4 /* CGMetalCameraInput.m */; };
+		96BF18EF27917A6C0005D1D4 /* CGMetalOpenGLInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186627917A6B0005D1D4 /* CGMetalOpenGLInput.m */; };
+		96BF18F027917A6C0005D1D4 /* CGMetalRawDataInput.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186727917A6B0005D1D4 /* CGMetalRawDataInput.metal */; };
+		96BF18F127917A6C0005D1D4 /* CGMetalTextureInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186827917A6B0005D1D4 /* CGMetalTextureInput.h */; };
+		96BF18F227917A6C0005D1D4 /* CGMetalPixelBufferInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186927917A6B0005D1D4 /* CGMetalPixelBufferInput.h */; };
+		96BF18F327917A6C0005D1D4 /* CGMetalImageInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186A27917A6B0005D1D4 /* CGMetalImageInput.h */; };
+		96BF18F427917A6C0005D1D4 /* CGMetalPlayerInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF186B27917A6B0005D1D4 /* CGMetalPlayerInput.m */; };
+		96BF18F527917A6C0005D1D4 /* CGMetalBasic.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186D27917A6B0005D1D4 /* CGMetalBasic.h */; };
+		96BF18F627917A6C0005D1D4 /* CGMetalBasicTwo.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF186E27917A6B0005D1D4 /* CGMetalBasicTwo.h */; };
+		96BF18F727917A6C0005D1D4 /* CGMetalShake.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF187027917A6B0005D1D4 /* CGMetalShake.h */; };
+		96BF18F827917A6C0005D1D4 /* CGMetalScaleAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187127917A6B0005D1D4 /* CGMetalScaleAlpha.m */; };
+		96BF18F927917A6C0005D1D4 /* CGMetalFlashWhite.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187227917A6B0005D1D4 /* CGMetalFlashWhite.metal */; };
+		96BF18FA27917A6C0005D1D4 /* CGMetalShake.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187327917A6B0005D1D4 /* CGMetalShake.metal */; };
+		96BF18FB27917A6C0005D1D4 /* CGMetalFlashWhite.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187427917A6B0005D1D4 /* CGMetalFlashWhite.m */; };
+		96BF18FC27917A6C0005D1D4 /* CGMetalSoul.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187527917A6B0005D1D4 /* CGMetalSoul.metal */; };
+		96BF18FD27917A6C0005D1D4 /* CGMetalGlitch.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF187627917A6B0005D1D4 /* CGMetalGlitch.h */; };
+		96BF18FE27917A6C0005D1D4 /* CGMetalBlendAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF187727917A6B0005D1D4 /* CGMetalBlendAlpha.h */; };
+		96BF18FF27917A6C0005D1D4 /* CGMetalBlendAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187827917A6B0005D1D4 /* CGMetalBlendAlpha.metal */; };
+		96BF190027917A6C0005D1D4 /* CGMetalSoul.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187927917A6B0005D1D4 /* CGMetalSoul.m */; };
+		96BF190127917A6C0005D1D4 /* CGMetalColour.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187A27917A6B0005D1D4 /* CGMetalColour.m */; };
+		96BF190227917A6C0005D1D4 /* CGMetalBlendScaleAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF187B27917A6B0005D1D4 /* CGMetalBlendScaleAlpha.h */; };
+		96BF190327917A6C0005D1D4 /* CGMetalGray.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187C27917A6B0005D1D4 /* CGMetalGray.m */; };
+		96BF190427917A6C0005D1D4 /* CGMetalScaleAlpha.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF187D27917A6B0005D1D4 /* CGMetalScaleAlpha.h */; };
+		96BF190527917A6C0005D1D4 /* CGMetalShake.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187E27917A6B0005D1D4 /* CGMetalShake.m */; };
+		96BF190627917A6C0005D1D4 /* CGMetalColour.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF187F27917A6B0005D1D4 /* CGMetalColour.metal */; };
+		96BF190727917A6C0005D1D4 /* CGMetalGray.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188027917A6B0005D1D4 /* CGMetalGray.metal */; };
+		96BF190827917A6C0005D1D4 /* CGMetalGlitch.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188127917A6B0005D1D4 /* CGMetalGlitch.metal */; };
+		96BF190927917A6C0005D1D4 /* CGMetalScaleAlpha.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188227917A6B0005D1D4 /* CGMetalScaleAlpha.metal */; };
+		96BF190A27917A6C0005D1D4 /* CGMetalFlashWhite.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188327917A6B0005D1D4 /* CGMetalFlashWhite.h */; };
+		96BF190B27917A6C0005D1D4 /* CGMetalGray.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188427917A6B0005D1D4 /* CGMetalGray.h */; };
+		96BF190C27917A6C0005D1D4 /* CGMetalBlendScaleAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188527917A6B0005D1D4 /* CGMetalBlendScaleAlpha.m */; };
+		96BF190D27917A6C0005D1D4 /* CGMetalColour.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188627917A6B0005D1D4 /* CGMetalColour.h */; };
+		96BF190E27917A6C0005D1D4 /* CGMetalSoul.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188727917A6B0005D1D4 /* CGMetalSoul.h */; };
+		96BF190F27917A6C0005D1D4 /* CGMetalBlendAlpha.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188827917A6B0005D1D4 /* CGMetalBlendAlpha.m */; };
+		96BF191027917A6C0005D1D4 /* CGMetalGlitch.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188927917A6B0005D1D4 /* CGMetalGlitch.m */; };
+		96BF191127917A6C0005D1D4 /* CGMetalBasicFour.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188A27917A6B0005D1D4 /* CGMetalBasicFour.m */; };
+		96BF191227917A6C0005D1D4 /* CGMetalBasicThree.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188B27917A6B0005D1D4 /* CGMetalBasicThree.h */; };
+		96BF191327917A6C0005D1D4 /* CGMetalHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF188C27917A6B0005D1D4 /* CGMetalHeader.h */; };
+		96BF191427917A6C0005D1D4 /* CGMetalBasic.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188D27917A6B0005D1D4 /* CGMetalBasic.m */; };
+		96BF191527917A6C0005D1D4 /* CGMetalBasic.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188E27917A6B0005D1D4 /* CGMetalBasic.metal */; };
+		96BF191627917A6C0005D1D4 /* CGMetalBasicTwo.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF188F27917A6B0005D1D4 /* CGMetalBasicTwo.m */; };
+		96BF191727917A6C0005D1D4 /* CGMetalBasicThree.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189027917A6B0005D1D4 /* CGMetalBasicThree.m */; };
+		96BF191827917A6C0005D1D4 /* CGMetalWobble.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189227917A6B0005D1D4 /* CGMetalWobble.h */; };
+		96BF191927917A6C0005D1D4 /* CGMetalFlipY.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189327917A6B0005D1D4 /* CGMetalFlipY.metal */; };
+		96BF191A27917A6C0005D1D4 /* CGMetalRotate.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189427917A6B0005D1D4 /* CGMetalRotate.h */; };
+		96BF191B27917A6C0005D1D4 /* CGMetalProjection.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189527917A6B0005D1D4 /* CGMetalProjection.metal */; };
+		96BF191C27917A6C0005D1D4 /* CGMetalFlipX.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189627917A6B0005D1D4 /* CGMetalFlipX.m */; };
+		96BF191D27917A6C0005D1D4 /* CGMetalReSize.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189727917A6B0005D1D4 /* CGMetalReSize.h */; };
+		96BF191E27917A6C0005D1D4 /* AePaintReSizeFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189827917A6B0005D1D4 /* AePaintReSizeFilter.m */; };
+		96BF191F27917A6C0005D1D4 /* CGMetalRotate.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189927917A6B0005D1D4 /* CGMetalRotate.metal */; };
+		96BF192027917A6C0005D1D4 /* CGMetalProjection.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189A27917A6B0005D1D4 /* CGMetalProjection.h */; };
+		96BF192127917A6C0005D1D4 /* CGMetalFlipX.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189B27917A6B0005D1D4 /* CGMetalFlipX.metal */; };
+		96BF192227917A6C0005D1D4 /* CGMetalZoom.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189C27917A6B0005D1D4 /* CGMetalZoom.h */; };
+		96BF192327917A6C0005D1D4 /* CGMetalTranslation.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF189D27917A6B0005D1D4 /* CGMetalTranslation.m */; };
+		96BF192427917A6C0005D1D4 /* CGMetalCrop.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189E27917A6B0005D1D4 /* CGMetalCrop.h */; };
+		96BF192527917A6C0005D1D4 /* CGMetalFlipY.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF189F27917A6B0005D1D4 /* CGMetalFlipY.h */; };
+		96BF192627917A6C0005D1D4 /* CGMetalRotate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A027917A6B0005D1D4 /* CGMetalRotate.m */; };
+		96BF192727917A6C0005D1D4 /* CGMetalWobble.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A127917A6B0005D1D4 /* CGMetalWobble.m */; };
+		96BF192827917A6C0005D1D4 /* CGMetalZoom.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A227917A6B0005D1D4 /* CGMetalZoom.metal */; };
+		96BF192927917A6C0005D1D4 /* CGMetalReSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A327917A6B0005D1D4 /* CGMetalReSize.m */; };
+		96BF192A27917A6C0005D1D4 /* CGMetalFlipX.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18A427917A6B0005D1D4 /* CGMetalFlipX.h */; };
+		96BF192B27917A6C0005D1D4 /* CGMetalWobble.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A527917A6B0005D1D4 /* CGMetalWobble.metal */; };
+		96BF192C27917A6C0005D1D4 /* CGMetalTranslation.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18A627917A6B0005D1D4 /* CGMetalTranslation.h */; };
+		96BF192D27917A6C0005D1D4 /* CGMetalZoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A727917A6B0005D1D4 /* CGMetalZoom.m */; };
+		96BF192E27917A6C0005D1D4 /* CGMetalProjection.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18A827917A6B0005D1D4 /* CGMetalProjection.m */; };
+		96BF192F27917A6C0005D1D4 /* AePaintReSizeFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18A927917A6B0005D1D4 /* AePaintReSizeFilter.h */; };
+		96BF193027917A6C0005D1D4 /* CGMetalFlipY.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18AA27917A6B0005D1D4 /* CGMetalFlipY.m */; };
+		96BF193127917A6C0005D1D4 /* CGMetalTranslation.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18AB27917A6B0005D1D4 /* CGMetalTranslation.metal */; };
+		96BF193227917A6C0005D1D4 /* CGMetalCrop.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18AC27917A6B0005D1D4 /* CGMetalCrop.m */; };
+		96BF193327917A6C0005D1D4 /* CGMetalBasicFour.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18AD27917A6B0005D1D4 /* CGMetalBasicFour.h */; };
+		96BF193427917A6C0005D1D4 /* CGMetalTextureOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18B027917A6B0005D1D4 /* CGMetalTextureOutput.h */; };
+		96BF193527917A6C0005D1D4 /* CGMetalImageOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18B127917A6B0005D1D4 /* CGMetalImageOutput.m */; };
+		96BF193627917A6C0005D1D4 /* CGMetalRawDataOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18B227917A6B0005D1D4 /* CGMetalRawDataOutput.h */; };
+		96BF193727917A6C0005D1D4 /* CGMetalPixelBufferOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18B327917A6B0005D1D4 /* CGMetalPixelBufferOutput.m */; };
+		96BF193827917A6C0005D1D4 /* CGMetalTextureOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18B427917A6B0005D1D4 /* CGMetalTextureOutput.m */; };
+		96BF193927917A6C0005D1D4 /* CGMetalImageOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18B527917A6B0005D1D4 /* CGMetalImageOutput.h */; };
+		96BF193A27917A6C0005D1D4 /* CGMetalPixelBufferOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18B627917A6C0005D1D4 /* CGMetalPixelBufferOutput.h */; };
+		96BF193B27917A6C0005D1D4 /* CGMetalRawDataOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18B727917A6C0005D1D4 /* CGMetalRawDataOutput.m */; };
+		96BF193C27917A6C0005D1D4 /* CGMetalVideoOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18B927917A6C0005D1D4 /* CGMetalVideoOutput.h */; };
+		96BF193D27917A6C0005D1D4 /* CGMetalOpenGLOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18BA27917A6C0005D1D4 /* CGMetalOpenGLOutput.m */; };
+		96BF193E27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18BB27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.h */; };
+		96BF193F27917A6C0005D1D4 /* CGMetalVideoOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18BC27917A6C0005D1D4 /* CGMetalVideoOutput.m */; };
+		96BF194027917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18BD27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.metal */; };
+		96BF194127917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18BE27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.m */; };
+		96BF194227917A6C0005D1D4 /* CGMetalOpenGLOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18BF27917A6C0005D1D4 /* CGMetalOpenGLOutput.h */; };
+		96BF194327917A6C0005D1D4 /* CGMetalUIViewOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18C127917A6C0005D1D4 /* CGMetalUIViewOutput.h */; };
+		96BF194427917A6C0005D1D4 /* CGMetalLayerOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18C227917A6C0005D1D4 /* CGMetalLayerOutput.m */; };
+		96BF194527917A6C0005D1D4 /* CGMetalView.metal in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18C327917A6C0005D1D4 /* CGMetalView.metal */; };
+		96BF194627917A6C0005D1D4 /* CGMetalNSViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18C427917A6C0005D1D4 /* CGMetalNSViewOutput.m */; };
+		96BF194727917A6C0005D1D4 /* CGMetalLayerOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18C527917A6C0005D1D4 /* CGMetalLayerOutput.h */; };
+		96BF194827917A6C0005D1D4 /* CGMetalUIViewOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = 96BF18C627917A6C0005D1D4 /* CGMetalUIViewOutput.m */; };
+		96BF194927917A6C0005D1D4 /* CGMetalNSViewOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18C727917A6C0005D1D4 /* CGMetalNSViewOutput.h */; };
+		96BF194A27917A6C0005D1D4 /* CGMetal.h in Headers */ = {isa = PBXBuildFile; fileRef = 96BF18C827917A6C0005D1D4 /* CGMetal.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9654C53E277562860024386E /* CGMetalOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CGMetalOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		969E8CF72775DD4600EFD90F /* CGMetalOS.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = CGMetalOS.docc; sourceTree = "<group>"; };
+		969E8CF82775DD4600EFD90F /* CGMetalOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOS.h; sourceTree = "<group>"; };
+		96BF183F27917A6B0005D1D4 /* CGMetalBufferProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBufferProvider.h; sourceTree = "<group>"; };
+		96BF184027917A6B0005D1D4 /* CGMetalDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalDevice.m; sourceTree = "<group>"; };
+		96BF184127917A6B0005D1D4 /* CGMetalQueueContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalQueueContext.m; sourceTree = "<group>"; };
+		96BF184227917A6B0005D1D4 /* MTLMetalCompute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTLMetalCompute.m; sourceTree = "<group>"; };
+		96BF184327917A6B0005D1D4 /* CGMetalTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalTexture.m; sourceTree = "<group>"; };
+		96BF184427917A6B0005D1D4 /* CGMetalContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalContext.h; sourceTree = "<group>"; };
+		96BF184527917A6B0005D1D4 /* compute.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = compute.metal; sourceTree = "<group>"; };
+		96BF184627917A6B0005D1D4 /* CGMetalSourfaceTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalSourfaceTexture.h; sourceTree = "<group>"; };
+		96BF184727917A6B0005D1D4 /* CGMetalRender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalRender.h; sourceTree = "<group>"; };
+		96BF184827917A6B0005D1D4 /* CGMetalBlit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBlit.h; sourceTree = "<group>"; };
+		96BF184927917A6B0005D1D4 /* CGMetalOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalOutput.m; sourceTree = "<group>"; };
+		96BF184A27917A6B0005D1D4 /* CGMetalOutputter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOutputter.h; sourceTree = "<group>"; };
+		96BF184B27917A6B0005D1D4 /* CGMetalQueueContext.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalQueueContext.h; sourceTree = "<group>"; };
+		96BF184C27917A6B0005D1D4 /* CGMetalDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalDevice.h; sourceTree = "<group>"; };
+		96BF184D27917A6B0005D1D4 /* CGMetalInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalInput.h; sourceTree = "<group>"; };
+		96BF184E27917A6B0005D1D4 /* CGMetalBufferProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBufferProvider.m; sourceTree = "<group>"; };
+		96BF184F27917A6B0005D1D4 /* CGMetalSourfaceTexture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalSourfaceTexture.m; sourceTree = "<group>"; };
+		96BF185027917A6B0005D1D4 /* CGMetalTexture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalTexture.h; sourceTree = "<group>"; };
+		96BF185127917A6B0005D1D4 /* CGMetalContext.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalContext.m; sourceTree = "<group>"; };
+		96BF185227917A6B0005D1D4 /* MTLMetalCompute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTLMetalCompute.h; sourceTree = "<group>"; };
+		96BF185327917A6B0005D1D4 /* CGMetalOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOutput.h; sourceTree = "<group>"; };
+		96BF185427917A6B0005D1D4 /* CGMetalRender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalRender.m; sourceTree = "<group>"; };
+		96BF185527917A6B0005D1D4 /* CGMetalBlit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBlit.m; sourceTree = "<group>"; };
+		96BF185627917A6B0005D1D4 /* CGMetalOutputter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalOutputter.m; sourceTree = "<group>"; };
+		96BF185827917A6B0005D1D4 /* CGMetalPlayerInputMac.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPlayerInputMac.m; sourceTree = "<group>"; };
+		96BF185927917A6B0005D1D4 /* CGMetalVideoInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalVideoInput.h; sourceTree = "<group>"; };
+		96BF185A27917A6B0005D1D4 /* CGMetalPixelBufferInput.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalPixelBufferInput.metal; sourceTree = "<group>"; };
+		96BF185B27917A6B0005D1D4 /* CGMetalOpenGLInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOpenGLInput.h; sourceTree = "<group>"; };
+		96BF185C27917A6B0005D1D4 /* CGMetalCameraInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalCameraInput.h; sourceTree = "<group>"; };
+		96BF185D27917A6B0005D1D4 /* CGMetalRawDataInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalRawDataInput.h; sourceTree = "<group>"; };
+		96BF185E27917A6B0005D1D4 /* CGMetalTextureInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalTextureInput.m; sourceTree = "<group>"; };
+		96BF185F27917A6B0005D1D4 /* CGMetalPixelBufferInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPixelBufferInput.m; sourceTree = "<group>"; };
+		96BF186027917A6B0005D1D4 /* CGMetalPlayerInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPlayerInput.h; sourceTree = "<group>"; };
+		96BF186127917A6B0005D1D4 /* CGMetalImageInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalImageInput.m; sourceTree = "<group>"; };
+		96BF186227917A6B0005D1D4 /* CGMetalVideoInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalVideoInput.m; sourceTree = "<group>"; };
+		96BF186327917A6B0005D1D4 /* CGMetalPlayerInputMac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPlayerInputMac.h; sourceTree = "<group>"; };
+		96BF186427917A6B0005D1D4 /* CGMetalRawDataInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalRawDataInput.m; sourceTree = "<group>"; };
+		96BF186527917A6B0005D1D4 /* CGMetalCameraInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalCameraInput.m; sourceTree = "<group>"; };
+		96BF186627917A6B0005D1D4 /* CGMetalOpenGLInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalOpenGLInput.m; sourceTree = "<group>"; };
+		96BF186727917A6B0005D1D4 /* CGMetalRawDataInput.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalRawDataInput.metal; sourceTree = "<group>"; };
+		96BF186827917A6B0005D1D4 /* CGMetalTextureInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalTextureInput.h; sourceTree = "<group>"; };
+		96BF186927917A6B0005D1D4 /* CGMetalPixelBufferInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPixelBufferInput.h; sourceTree = "<group>"; };
+		96BF186A27917A6B0005D1D4 /* CGMetalImageInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalImageInput.h; sourceTree = "<group>"; };
+		96BF186B27917A6B0005D1D4 /* CGMetalPlayerInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPlayerInput.m; sourceTree = "<group>"; };
+		96BF186D27917A6B0005D1D4 /* CGMetalBasic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBasic.h; sourceTree = "<group>"; };
+		96BF186E27917A6B0005D1D4 /* CGMetalBasicTwo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBasicTwo.h; sourceTree = "<group>"; };
+		96BF187027917A6B0005D1D4 /* CGMetalShake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalShake.h; sourceTree = "<group>"; };
+		96BF187127917A6B0005D1D4 /* CGMetalScaleAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalScaleAlpha.m; sourceTree = "<group>"; };
+		96BF187227917A6B0005D1D4 /* CGMetalFlashWhite.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalFlashWhite.metal; sourceTree = "<group>"; };
+		96BF187327917A6B0005D1D4 /* CGMetalShake.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalShake.metal; sourceTree = "<group>"; };
+		96BF187427917A6B0005D1D4 /* CGMetalFlashWhite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalFlashWhite.m; sourceTree = "<group>"; };
+		96BF187527917A6B0005D1D4 /* CGMetalSoul.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalSoul.metal; sourceTree = "<group>"; };
+		96BF187627917A6B0005D1D4 /* CGMetalGlitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalGlitch.h; sourceTree = "<group>"; };
+		96BF187727917A6B0005D1D4 /* CGMetalBlendAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBlendAlpha.h; sourceTree = "<group>"; };
+		96BF187827917A6B0005D1D4 /* CGMetalBlendAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalBlendAlpha.metal; sourceTree = "<group>"; };
+		96BF187927917A6B0005D1D4 /* CGMetalSoul.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalSoul.m; sourceTree = "<group>"; };
+		96BF187A27917A6B0005D1D4 /* CGMetalColour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalColour.m; sourceTree = "<group>"; };
+		96BF187B27917A6B0005D1D4 /* CGMetalBlendScaleAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBlendScaleAlpha.h; sourceTree = "<group>"; };
+		96BF187C27917A6B0005D1D4 /* CGMetalGray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalGray.m; sourceTree = "<group>"; };
+		96BF187D27917A6B0005D1D4 /* CGMetalScaleAlpha.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalScaleAlpha.h; sourceTree = "<group>"; };
+		96BF187E27917A6B0005D1D4 /* CGMetalShake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalShake.m; sourceTree = "<group>"; };
+		96BF187F27917A6B0005D1D4 /* CGMetalColour.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalColour.metal; sourceTree = "<group>"; };
+		96BF188027917A6B0005D1D4 /* CGMetalGray.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalGray.metal; sourceTree = "<group>"; };
+		96BF188127917A6B0005D1D4 /* CGMetalGlitch.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalGlitch.metal; sourceTree = "<group>"; };
+		96BF188227917A6B0005D1D4 /* CGMetalScaleAlpha.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalScaleAlpha.metal; sourceTree = "<group>"; };
+		96BF188327917A6B0005D1D4 /* CGMetalFlashWhite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalFlashWhite.h; sourceTree = "<group>"; };
+		96BF188427917A6B0005D1D4 /* CGMetalGray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalGray.h; sourceTree = "<group>"; };
+		96BF188527917A6B0005D1D4 /* CGMetalBlendScaleAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBlendScaleAlpha.m; sourceTree = "<group>"; };
+		96BF188627917A6B0005D1D4 /* CGMetalColour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalColour.h; sourceTree = "<group>"; };
+		96BF188727917A6B0005D1D4 /* CGMetalSoul.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalSoul.h; sourceTree = "<group>"; };
+		96BF188827917A6B0005D1D4 /* CGMetalBlendAlpha.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBlendAlpha.m; sourceTree = "<group>"; };
+		96BF188927917A6B0005D1D4 /* CGMetalGlitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalGlitch.m; sourceTree = "<group>"; };
+		96BF188A27917A6B0005D1D4 /* CGMetalBasicFour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBasicFour.m; sourceTree = "<group>"; };
+		96BF188B27917A6B0005D1D4 /* CGMetalBasicThree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBasicThree.h; sourceTree = "<group>"; };
+		96BF188C27917A6B0005D1D4 /* CGMetalHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalHeader.h; sourceTree = "<group>"; };
+		96BF188D27917A6B0005D1D4 /* CGMetalBasic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBasic.m; sourceTree = "<group>"; };
+		96BF188E27917A6B0005D1D4 /* CGMetalBasic.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalBasic.metal; sourceTree = "<group>"; };
+		96BF188F27917A6B0005D1D4 /* CGMetalBasicTwo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBasicTwo.m; sourceTree = "<group>"; };
+		96BF189027917A6B0005D1D4 /* CGMetalBasicThree.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalBasicThree.m; sourceTree = "<group>"; };
+		96BF189227917A6B0005D1D4 /* CGMetalWobble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalWobble.h; sourceTree = "<group>"; };
+		96BF189327917A6B0005D1D4 /* CGMetalFlipY.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalFlipY.metal; sourceTree = "<group>"; };
+		96BF189427917A6B0005D1D4 /* CGMetalRotate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalRotate.h; sourceTree = "<group>"; };
+		96BF189527917A6B0005D1D4 /* CGMetalProjection.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalProjection.metal; sourceTree = "<group>"; };
+		96BF189627917A6B0005D1D4 /* CGMetalFlipX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalFlipX.m; sourceTree = "<group>"; };
+		96BF189727917A6B0005D1D4 /* CGMetalReSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalReSize.h; sourceTree = "<group>"; };
+		96BF189827917A6B0005D1D4 /* AePaintReSizeFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AePaintReSizeFilter.m; sourceTree = "<group>"; };
+		96BF189927917A6B0005D1D4 /* CGMetalRotate.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalRotate.metal; sourceTree = "<group>"; };
+		96BF189A27917A6B0005D1D4 /* CGMetalProjection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalProjection.h; sourceTree = "<group>"; };
+		96BF189B27917A6B0005D1D4 /* CGMetalFlipX.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalFlipX.metal; sourceTree = "<group>"; };
+		96BF189C27917A6B0005D1D4 /* CGMetalZoom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalZoom.h; sourceTree = "<group>"; };
+		96BF189D27917A6B0005D1D4 /* CGMetalTranslation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalTranslation.m; sourceTree = "<group>"; };
+		96BF189E27917A6B0005D1D4 /* CGMetalCrop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalCrop.h; sourceTree = "<group>"; };
+		96BF189F27917A6B0005D1D4 /* CGMetalFlipY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalFlipY.h; sourceTree = "<group>"; };
+		96BF18A027917A6B0005D1D4 /* CGMetalRotate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalRotate.m; sourceTree = "<group>"; };
+		96BF18A127917A6B0005D1D4 /* CGMetalWobble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalWobble.m; sourceTree = "<group>"; };
+		96BF18A227917A6B0005D1D4 /* CGMetalZoom.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalZoom.metal; sourceTree = "<group>"; };
+		96BF18A327917A6B0005D1D4 /* CGMetalReSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalReSize.m; sourceTree = "<group>"; };
+		96BF18A427917A6B0005D1D4 /* CGMetalFlipX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalFlipX.h; sourceTree = "<group>"; };
+		96BF18A527917A6B0005D1D4 /* CGMetalWobble.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalWobble.metal; sourceTree = "<group>"; };
+		96BF18A627917A6B0005D1D4 /* CGMetalTranslation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalTranslation.h; sourceTree = "<group>"; };
+		96BF18A727917A6B0005D1D4 /* CGMetalZoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalZoom.m; sourceTree = "<group>"; };
+		96BF18A827917A6B0005D1D4 /* CGMetalProjection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalProjection.m; sourceTree = "<group>"; };
+		96BF18A927917A6B0005D1D4 /* AePaintReSizeFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AePaintReSizeFilter.h; sourceTree = "<group>"; };
+		96BF18AA27917A6B0005D1D4 /* CGMetalFlipY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalFlipY.m; sourceTree = "<group>"; };
+		96BF18AB27917A6B0005D1D4 /* CGMetalTranslation.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalTranslation.metal; sourceTree = "<group>"; };
+		96BF18AC27917A6B0005D1D4 /* CGMetalCrop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalCrop.m; sourceTree = "<group>"; };
+		96BF18AD27917A6B0005D1D4 /* CGMetalBasicFour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalBasicFour.h; sourceTree = "<group>"; };
+		96BF18B027917A6B0005D1D4 /* CGMetalTextureOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalTextureOutput.h; sourceTree = "<group>"; };
+		96BF18B127917A6B0005D1D4 /* CGMetalImageOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalImageOutput.m; sourceTree = "<group>"; };
+		96BF18B227917A6B0005D1D4 /* CGMetalRawDataOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalRawDataOutput.h; sourceTree = "<group>"; };
+		96BF18B327917A6B0005D1D4 /* CGMetalPixelBufferOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPixelBufferOutput.m; sourceTree = "<group>"; };
+		96BF18B427917A6B0005D1D4 /* CGMetalTextureOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalTextureOutput.m; sourceTree = "<group>"; };
+		96BF18B527917A6B0005D1D4 /* CGMetalImageOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalImageOutput.h; sourceTree = "<group>"; };
+		96BF18B627917A6C0005D1D4 /* CGMetalPixelBufferOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPixelBufferOutput.h; sourceTree = "<group>"; };
+		96BF18B727917A6C0005D1D4 /* CGMetalRawDataOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalRawDataOutput.m; sourceTree = "<group>"; };
+		96BF18B927917A6C0005D1D4 /* CGMetalVideoOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalVideoOutput.h; sourceTree = "<group>"; };
+		96BF18BA27917A6C0005D1D4 /* CGMetalOpenGLOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalOpenGLOutput.m; sourceTree = "<group>"; };
+		96BF18BB27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalPixelBufferSurfaceOutput.h; sourceTree = "<group>"; };
+		96BF18BC27917A6C0005D1D4 /* CGMetalVideoOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalVideoOutput.m; sourceTree = "<group>"; };
+		96BF18BD27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalPixelBufferSurfaceOutput.metal; sourceTree = "<group>"; };
+		96BF18BE27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalPixelBufferSurfaceOutput.m; sourceTree = "<group>"; };
+		96BF18BF27917A6C0005D1D4 /* CGMetalOpenGLOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalOpenGLOutput.h; sourceTree = "<group>"; };
+		96BF18C127917A6C0005D1D4 /* CGMetalUIViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalUIViewOutput.h; sourceTree = "<group>"; };
+		96BF18C227917A6C0005D1D4 /* CGMetalLayerOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalLayerOutput.m; sourceTree = "<group>"; };
+		96BF18C327917A6C0005D1D4 /* CGMetalView.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = CGMetalView.metal; sourceTree = "<group>"; };
+		96BF18C427917A6C0005D1D4 /* CGMetalNSViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalNSViewOutput.m; sourceTree = "<group>"; };
+		96BF18C527917A6C0005D1D4 /* CGMetalLayerOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalLayerOutput.h; sourceTree = "<group>"; };
+		96BF18C627917A6C0005D1D4 /* CGMetalUIViewOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGMetalUIViewOutput.m; sourceTree = "<group>"; };
+		96BF18C727917A6C0005D1D4 /* CGMetalNSViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetalNSViewOutput.h; sourceTree = "<group>"; };
+		96BF18C827917A6C0005D1D4 /* CGMetal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGMetal.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9654C53B277562860024386E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9654C534277562860024386E = {
+			isa = PBXGroup;
+			children = (
+				9654C540277562860024386E /* CGMetalOS */,
+				9654C53F277562860024386E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9654C53F277562860024386E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9654C53E277562860024386E /* CGMetalOS.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9654C540277562860024386E /* CGMetalOS */ = {
+			isa = PBXGroup;
+			children = (
+				96BF183D27917A6B0005D1D4 /* Source */,
+				969E8CF82775DD4600EFD90F /* CGMetalOS.h */,
+				969E8CF72775DD4600EFD90F /* CGMetalOS.docc */,
+			);
+			path = CGMetalOS;
+			sourceTree = "<group>";
+		};
+		96BF183D27917A6B0005D1D4 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				96BF183E27917A6B0005D1D4 /* Core */,
+				96BF185727917A6B0005D1D4 /* Input */,
+				96BF186C27917A6B0005D1D4 /* Basic */,
+				96BF18AE27917A6B0005D1D4 /* Output */,
+				96BF18C827917A6C0005D1D4 /* CGMetal.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		96BF183E27917A6B0005D1D4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				96BF183F27917A6B0005D1D4 /* CGMetalBufferProvider.h */,
+				96BF184027917A6B0005D1D4 /* CGMetalDevice.m */,
+				96BF184127917A6B0005D1D4 /* CGMetalQueueContext.m */,
+				96BF184227917A6B0005D1D4 /* MTLMetalCompute.m */,
+				96BF184327917A6B0005D1D4 /* CGMetalTexture.m */,
+				96BF184427917A6B0005D1D4 /* CGMetalContext.h */,
+				96BF184527917A6B0005D1D4 /* compute.metal */,
+				96BF184627917A6B0005D1D4 /* CGMetalSourfaceTexture.h */,
+				96BF184727917A6B0005D1D4 /* CGMetalRender.h */,
+				96BF184827917A6B0005D1D4 /* CGMetalBlit.h */,
+				96BF184927917A6B0005D1D4 /* CGMetalOutput.m */,
+				96BF184A27917A6B0005D1D4 /* CGMetalOutputter.h */,
+				96BF184B27917A6B0005D1D4 /* CGMetalQueueContext.h */,
+				96BF184C27917A6B0005D1D4 /* CGMetalDevice.h */,
+				96BF184D27917A6B0005D1D4 /* CGMetalInput.h */,
+				96BF184E27917A6B0005D1D4 /* CGMetalBufferProvider.m */,
+				96BF184F27917A6B0005D1D4 /* CGMetalSourfaceTexture.m */,
+				96BF185027917A6B0005D1D4 /* CGMetalTexture.h */,
+				96BF185127917A6B0005D1D4 /* CGMetalContext.m */,
+				96BF185227917A6B0005D1D4 /* MTLMetalCompute.h */,
+				96BF185327917A6B0005D1D4 /* CGMetalOutput.h */,
+				96BF185427917A6B0005D1D4 /* CGMetalRender.m */,
+				96BF185527917A6B0005D1D4 /* CGMetalBlit.m */,
+				96BF185627917A6B0005D1D4 /* CGMetalOutputter.m */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		96BF185727917A6B0005D1D4 /* Input */ = {
+			isa = PBXGroup;
+			children = (
+				96BF185827917A6B0005D1D4 /* CGMetalPlayerInputMac.m */,
+				96BF185927917A6B0005D1D4 /* CGMetalVideoInput.h */,
+				96BF185A27917A6B0005D1D4 /* CGMetalPixelBufferInput.metal */,
+				96BF185B27917A6B0005D1D4 /* CGMetalOpenGLInput.h */,
+				96BF185C27917A6B0005D1D4 /* CGMetalCameraInput.h */,
+				96BF185D27917A6B0005D1D4 /* CGMetalRawDataInput.h */,
+				96BF185E27917A6B0005D1D4 /* CGMetalTextureInput.m */,
+				96BF185F27917A6B0005D1D4 /* CGMetalPixelBufferInput.m */,
+				96BF186027917A6B0005D1D4 /* CGMetalPlayerInput.h */,
+				96BF186127917A6B0005D1D4 /* CGMetalImageInput.m */,
+				96BF186227917A6B0005D1D4 /* CGMetalVideoInput.m */,
+				96BF186327917A6B0005D1D4 /* CGMetalPlayerInputMac.h */,
+				96BF186427917A6B0005D1D4 /* CGMetalRawDataInput.m */,
+				96BF186527917A6B0005D1D4 /* CGMetalCameraInput.m */,
+				96BF186627917A6B0005D1D4 /* CGMetalOpenGLInput.m */,
+				96BF186727917A6B0005D1D4 /* CGMetalRawDataInput.metal */,
+				96BF186827917A6B0005D1D4 /* CGMetalTextureInput.h */,
+				96BF186927917A6B0005D1D4 /* CGMetalPixelBufferInput.h */,
+				96BF186A27917A6B0005D1D4 /* CGMetalImageInput.h */,
+				96BF186B27917A6B0005D1D4 /* CGMetalPlayerInput.m */,
+			);
+			path = Input;
+			sourceTree = "<group>";
+		};
+		96BF186C27917A6B0005D1D4 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				96BF186D27917A6B0005D1D4 /* CGMetalBasic.h */,
+				96BF186E27917A6B0005D1D4 /* CGMetalBasicTwo.h */,
+				96BF186F27917A6B0005D1D4 /* Effect */,
+				96BF188A27917A6B0005D1D4 /* CGMetalBasicFour.m */,
+				96BF188B27917A6B0005D1D4 /* CGMetalBasicThree.h */,
+				96BF188C27917A6B0005D1D4 /* CGMetalHeader.h */,
+				96BF188D27917A6B0005D1D4 /* CGMetalBasic.m */,
+				96BF188E27917A6B0005D1D4 /* CGMetalBasic.metal */,
+				96BF188F27917A6B0005D1D4 /* CGMetalBasicTwo.m */,
+				96BF189027917A6B0005D1D4 /* CGMetalBasicThree.m */,
+				96BF189127917A6B0005D1D4 /* Transform */,
+				96BF18AD27917A6B0005D1D4 /* CGMetalBasicFour.h */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		96BF186F27917A6B0005D1D4 /* Effect */ = {
+			isa = PBXGroup;
+			children = (
+				96BF187027917A6B0005D1D4 /* CGMetalShake.h */,
+				96BF187127917A6B0005D1D4 /* CGMetalScaleAlpha.m */,
+				96BF187227917A6B0005D1D4 /* CGMetalFlashWhite.metal */,
+				96BF187327917A6B0005D1D4 /* CGMetalShake.metal */,
+				96BF187427917A6B0005D1D4 /* CGMetalFlashWhite.m */,
+				96BF187527917A6B0005D1D4 /* CGMetalSoul.metal */,
+				96BF187627917A6B0005D1D4 /* CGMetalGlitch.h */,
+				96BF187727917A6B0005D1D4 /* CGMetalBlendAlpha.h */,
+				96BF187827917A6B0005D1D4 /* CGMetalBlendAlpha.metal */,
+				96BF187927917A6B0005D1D4 /* CGMetalSoul.m */,
+				96BF187A27917A6B0005D1D4 /* CGMetalColour.m */,
+				96BF187B27917A6B0005D1D4 /* CGMetalBlendScaleAlpha.h */,
+				96BF187C27917A6B0005D1D4 /* CGMetalGray.m */,
+				96BF187D27917A6B0005D1D4 /* CGMetalScaleAlpha.h */,
+				96BF187E27917A6B0005D1D4 /* CGMetalShake.m */,
+				96BF187F27917A6B0005D1D4 /* CGMetalColour.metal */,
+				96BF188027917A6B0005D1D4 /* CGMetalGray.metal */,
+				96BF188127917A6B0005D1D4 /* CGMetalGlitch.metal */,
+				96BF188227917A6B0005D1D4 /* CGMetalScaleAlpha.metal */,
+				96BF188327917A6B0005D1D4 /* CGMetalFlashWhite.h */,
+				96BF188427917A6B0005D1D4 /* CGMetalGray.h */,
+				96BF188527917A6B0005D1D4 /* CGMetalBlendScaleAlpha.m */,
+				96BF188627917A6B0005D1D4 /* CGMetalColour.h */,
+				96BF188727917A6B0005D1D4 /* CGMetalSoul.h */,
+				96BF188827917A6B0005D1D4 /* CGMetalBlendAlpha.m */,
+				96BF188927917A6B0005D1D4 /* CGMetalGlitch.m */,
+			);
+			path = Effect;
+			sourceTree = "<group>";
+		};
+		96BF189127917A6B0005D1D4 /* Transform */ = {
+			isa = PBXGroup;
+			children = (
+				96BF189227917A6B0005D1D4 /* CGMetalWobble.h */,
+				96BF189327917A6B0005D1D4 /* CGMetalFlipY.metal */,
+				96BF189427917A6B0005D1D4 /* CGMetalRotate.h */,
+				96BF189527917A6B0005D1D4 /* CGMetalProjection.metal */,
+				96BF189627917A6B0005D1D4 /* CGMetalFlipX.m */,
+				96BF189727917A6B0005D1D4 /* CGMetalReSize.h */,
+				96BF189827917A6B0005D1D4 /* AePaintReSizeFilter.m */,
+				96BF189927917A6B0005D1D4 /* CGMetalRotate.metal */,
+				96BF189A27917A6B0005D1D4 /* CGMetalProjection.h */,
+				96BF189B27917A6B0005D1D4 /* CGMetalFlipX.metal */,
+				96BF189C27917A6B0005D1D4 /* CGMetalZoom.h */,
+				96BF189D27917A6B0005D1D4 /* CGMetalTranslation.m */,
+				96BF189E27917A6B0005D1D4 /* CGMetalCrop.h */,
+				96BF189F27917A6B0005D1D4 /* CGMetalFlipY.h */,
+				96BF18A027917A6B0005D1D4 /* CGMetalRotate.m */,
+				96BF18A127917A6B0005D1D4 /* CGMetalWobble.m */,
+				96BF18A227917A6B0005D1D4 /* CGMetalZoom.metal */,
+				96BF18A327917A6B0005D1D4 /* CGMetalReSize.m */,
+				96BF18A427917A6B0005D1D4 /* CGMetalFlipX.h */,
+				96BF18A527917A6B0005D1D4 /* CGMetalWobble.metal */,
+				96BF18A627917A6B0005D1D4 /* CGMetalTranslation.h */,
+				96BF18A727917A6B0005D1D4 /* CGMetalZoom.m */,
+				96BF18A827917A6B0005D1D4 /* CGMetalProjection.m */,
+				96BF18A927917A6B0005D1D4 /* AePaintReSizeFilter.h */,
+				96BF18AA27917A6B0005D1D4 /* CGMetalFlipY.m */,
+				96BF18AB27917A6B0005D1D4 /* CGMetalTranslation.metal */,
+				96BF18AC27917A6B0005D1D4 /* CGMetalCrop.m */,
+			);
+			path = Transform;
+			sourceTree = "<group>";
+		};
+		96BF18AE27917A6B0005D1D4 /* Output */ = {
+			isa = PBXGroup;
+			children = (
+				96BF18AF27917A6B0005D1D4 /* ReadBytes */,
+				96BF18B827917A6C0005D1D4 /* IOSurface */,
+				96BF18C027917A6C0005D1D4 /* View */,
+			);
+			path = Output;
+			sourceTree = "<group>";
+		};
+		96BF18AF27917A6B0005D1D4 /* ReadBytes */ = {
+			isa = PBXGroup;
+			children = (
+				96BF18B027917A6B0005D1D4 /* CGMetalTextureOutput.h */,
+				96BF18B127917A6B0005D1D4 /* CGMetalImageOutput.m */,
+				96BF18B227917A6B0005D1D4 /* CGMetalRawDataOutput.h */,
+				96BF18B327917A6B0005D1D4 /* CGMetalPixelBufferOutput.m */,
+				96BF18B427917A6B0005D1D4 /* CGMetalTextureOutput.m */,
+				96BF18B527917A6B0005D1D4 /* CGMetalImageOutput.h */,
+				96BF18B627917A6C0005D1D4 /* CGMetalPixelBufferOutput.h */,
+				96BF18B727917A6C0005D1D4 /* CGMetalRawDataOutput.m */,
+			);
+			path = ReadBytes;
+			sourceTree = "<group>";
+		};
+		96BF18B827917A6C0005D1D4 /* IOSurface */ = {
+			isa = PBXGroup;
+			children = (
+				96BF18B927917A6C0005D1D4 /* CGMetalVideoOutput.h */,
+				96BF18BA27917A6C0005D1D4 /* CGMetalOpenGLOutput.m */,
+				96BF18BB27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.h */,
+				96BF18BC27917A6C0005D1D4 /* CGMetalVideoOutput.m */,
+				96BF18BD27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.metal */,
+				96BF18BE27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.m */,
+				96BF18BF27917A6C0005D1D4 /* CGMetalOpenGLOutput.h */,
+			);
+			path = IOSurface;
+			sourceTree = "<group>";
+		};
+		96BF18C027917A6C0005D1D4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				96BF18C127917A6C0005D1D4 /* CGMetalUIViewOutput.h */,
+				96BF18C227917A6C0005D1D4 /* CGMetalLayerOutput.m */,
+				96BF18C327917A6C0005D1D4 /* CGMetalView.metal */,
+				96BF18C427917A6C0005D1D4 /* CGMetalNSViewOutput.m */,
+				96BF18C527917A6C0005D1D4 /* CGMetalLayerOutput.h */,
+				96BF18C627917A6C0005D1D4 /* CGMetalUIViewOutput.m */,
+				96BF18C727917A6C0005D1D4 /* CGMetalNSViewOutput.h */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9654C539277562860024386E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BF18E527917A6C0005D1D4 /* CGMetalCameraInput.h in Headers */,
+				96BF190A27917A6C0005D1D4 /* CGMetalFlashWhite.h in Headers */,
+				96BF18D027917A6C0005D1D4 /* CGMetalSourfaceTexture.h in Headers */,
+				96BF18DD27917A6C0005D1D4 /* CGMetalOutput.h in Headers */,
+				96BF191227917A6C0005D1D4 /* CGMetalBasicThree.h in Headers */,
+				96BF194927917A6C0005D1D4 /* CGMetalNSViewOutput.h in Headers */,
+				96BF18F327917A6C0005D1D4 /* CGMetalImageInput.h in Headers */,
+				96BF18F527917A6C0005D1D4 /* CGMetalBasic.h in Headers */,
+				96BF18FE27917A6C0005D1D4 /* CGMetalBlendAlpha.h in Headers */,
+				96BF191D27917A6C0005D1D4 /* CGMetalReSize.h in Headers */,
+				96BF18D427917A6C0005D1D4 /* CGMetalOutputter.h in Headers */,
+				96BF192A27917A6C0005D1D4 /* CGMetalFlipX.h in Headers */,
+				96BF18E227917A6C0005D1D4 /* CGMetalVideoInput.h in Headers */,
+				96BF18F727917A6C0005D1D4 /* CGMetalShake.h in Headers */,
+				96BF18DA27917A6C0005D1D4 /* CGMetalTexture.h in Headers */,
+				96BF193627917A6C0005D1D4 /* CGMetalRawDataOutput.h in Headers */,
+				96BF192C27917A6C0005D1D4 /* CGMetalTranslation.h in Headers */,
+				96BF192527917A6C0005D1D4 /* CGMetalFlipY.h in Headers */,
+				96BF18F627917A6C0005D1D4 /* CGMetalBasicTwo.h in Headers */,
+				96BF191827917A6C0005D1D4 /* CGMetalWobble.h in Headers */,
+				96BF192F27917A6C0005D1D4 /* AePaintReSizeFilter.h in Headers */,
+				96BF18EC27917A6C0005D1D4 /* CGMetalPlayerInputMac.h in Headers */,
+				96BF18D527917A6C0005D1D4 /* CGMetalQueueContext.h in Headers */,
+				96BF18DC27917A6C0005D1D4 /* MTLMetalCompute.h in Headers */,
+				96BF193427917A6C0005D1D4 /* CGMetalTextureOutput.h in Headers */,
+				96BF194327917A6C0005D1D4 /* CGMetalUIViewOutput.h in Headers */,
+				96BF190B27917A6C0005D1D4 /* CGMetalGray.h in Headers */,
+				96BF193327917A6C0005D1D4 /* CGMetalBasicFour.h in Headers */,
+				96BF18FD27917A6C0005D1D4 /* CGMetalGlitch.h in Headers */,
+				96BF18D127917A6C0005D1D4 /* CGMetalRender.h in Headers */,
+				969E8CFA2775DD4700EFD90F /* CGMetalOS.h in Headers */,
+				96BF18E627917A6C0005D1D4 /* CGMetalRawDataInput.h in Headers */,
+				96BF190E27917A6C0005D1D4 /* CGMetalSoul.h in Headers */,
+				96BF18F227917A6C0005D1D4 /* CGMetalPixelBufferInput.h in Headers */,
+				96BF191A27917A6C0005D1D4 /* CGMetalRotate.h in Headers */,
+				96BF194A27917A6C0005D1D4 /* CGMetal.h in Headers */,
+				96BF192027917A6C0005D1D4 /* CGMetalProjection.h in Headers */,
+				96BF190427917A6C0005D1D4 /* CGMetalScaleAlpha.h in Headers */,
+				96BF190D27917A6C0005D1D4 /* CGMetalColour.h in Headers */,
+				96BF192427917A6C0005D1D4 /* CGMetalCrop.h in Headers */,
+				96BF194227917A6C0005D1D4 /* CGMetalOpenGLOutput.h in Headers */,
+				96BF194727917A6C0005D1D4 /* CGMetalLayerOutput.h in Headers */,
+				96BF18C927917A6C0005D1D4 /* CGMetalBufferProvider.h in Headers */,
+				96BF18F127917A6C0005D1D4 /* CGMetalTextureInput.h in Headers */,
+				96BF18E927917A6C0005D1D4 /* CGMetalPlayerInput.h in Headers */,
+				96BF191327917A6C0005D1D4 /* CGMetalHeader.h in Headers */,
+				96BF18D627917A6C0005D1D4 /* CGMetalDevice.h in Headers */,
+				96BF193E27917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.h in Headers */,
+				96BF193A27917A6C0005D1D4 /* CGMetalPixelBufferOutput.h in Headers */,
+				96BF18D727917A6C0005D1D4 /* CGMetalInput.h in Headers */,
+				96BF18E427917A6C0005D1D4 /* CGMetalOpenGLInput.h in Headers */,
+				96BF193927917A6C0005D1D4 /* CGMetalImageOutput.h in Headers */,
+				96BF18CE27917A6C0005D1D4 /* CGMetalContext.h in Headers */,
+				96BF192227917A6C0005D1D4 /* CGMetalZoom.h in Headers */,
+				96BF190227917A6C0005D1D4 /* CGMetalBlendScaleAlpha.h in Headers */,
+				96BF18D227917A6C0005D1D4 /* CGMetalBlit.h in Headers */,
+				96BF193C27917A6C0005D1D4 /* CGMetalVideoOutput.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9654C53D277562860024386E /* CGMetalOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9654C547277562860024386E /* Build configuration list for PBXNativeTarget "CGMetalOS" */;
+			buildPhases = (
+				9654C539277562860024386E /* Headers */,
+				9654C53A277562860024386E /* Sources */,
+				9654C53B277562860024386E /* Frameworks */,
+				9654C53C277562860024386E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CGMetalOS;
+			productName = CGMetal;
+			productReference = 9654C53E277562860024386E /* CGMetalOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9654C535277562860024386E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				CLASSPREFIX = CGMetal;
+				LastUpgradeCheck = 1320;
+				ORGANIZATIONNAME = com.metal.Jason;
+				TargetAttributes = {
+					9654C53D277562860024386E = {
+						CreatedOnToolsVersion = 13.2;
+					};
+				};
+			};
+			buildConfigurationList = 9654C538277562860024386E /* Build configuration list for PBXProject "CGMetalOS" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9654C534277562860024386E;
+			productRefGroup = 9654C53F277562860024386E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9654C53D277562860024386E /* CGMetalOS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9654C53C277562860024386E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9654C53A277562860024386E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96BF18FC27917A6C0005D1D4 /* CGMetalSoul.metal in Sources */,
+				96BF18CD27917A6C0005D1D4 /* CGMetalTexture.m in Sources */,
+				96BF18F427917A6C0005D1D4 /* CGMetalPlayerInput.m in Sources */,
+				96BF191727917A6C0005D1D4 /* CGMetalBasicThree.m in Sources */,
+				96BF191427917A6C0005D1D4 /* CGMetalBasic.m in Sources */,
+				96BF191027917A6C0005D1D4 /* CGMetalGlitch.m in Sources */,
+				96BF192B27917A6C0005D1D4 /* CGMetalWobble.metal in Sources */,
+				96BF18EF27917A6C0005D1D4 /* CGMetalOpenGLInput.m in Sources */,
+				96BF193227917A6C0005D1D4 /* CGMetalCrop.m in Sources */,
+				969E8CF92775DD4700EFD90F /* CGMetalOS.docc in Sources */,
+				96BF191E27917A6C0005D1D4 /* AePaintReSizeFilter.m in Sources */,
+				96BF190327917A6C0005D1D4 /* CGMetalGray.m in Sources */,
+				96BF190727917A6C0005D1D4 /* CGMetalGray.metal in Sources */,
+				96BF18D327917A6C0005D1D4 /* CGMetalOutput.m in Sources */,
+				96BF18F027917A6C0005D1D4 /* CGMetalRawDataInput.metal in Sources */,
+				96BF18D927917A6C0005D1D4 /* CGMetalSourfaceTexture.m in Sources */,
+				96BF18DE27917A6C0005D1D4 /* CGMetalRender.m in Sources */,
+				96BF193727917A6C0005D1D4 /* CGMetalPixelBufferOutput.m in Sources */,
+				96BF18E127917A6C0005D1D4 /* CGMetalPlayerInputMac.m in Sources */,
+				96BF192927917A6C0005D1D4 /* CGMetalReSize.m in Sources */,
+				96BF18F827917A6C0005D1D4 /* CGMetalScaleAlpha.m in Sources */,
+				96BF18CC27917A6C0005D1D4 /* MTLMetalCompute.m in Sources */,
+				96BF192E27917A6C0005D1D4 /* CGMetalProjection.m in Sources */,
+				96BF190027917A6C0005D1D4 /* CGMetalSoul.m in Sources */,
+				96BF18E827917A6C0005D1D4 /* CGMetalPixelBufferInput.m in Sources */,
+				96BF192627917A6C0005D1D4 /* CGMetalRotate.m in Sources */,
+				96BF193827917A6C0005D1D4 /* CGMetalTextureOutput.m in Sources */,
+				96BF18DB27917A6C0005D1D4 /* CGMetalContext.m in Sources */,
+				96BF18D827917A6C0005D1D4 /* CGMetalBufferProvider.m in Sources */,
+				96BF18EB27917A6C0005D1D4 /* CGMetalVideoInput.m in Sources */,
+				96BF18E327917A6C0005D1D4 /* CGMetalPixelBufferInput.metal in Sources */,
+				96BF18EE27917A6C0005D1D4 /* CGMetalCameraInput.m in Sources */,
+				96BF194627917A6C0005D1D4 /* CGMetalNSViewOutput.m in Sources */,
+				96BF18DF27917A6C0005D1D4 /* CGMetalBlit.m in Sources */,
+				96BF191C27917A6C0005D1D4 /* CGMetalFlipX.m in Sources */,
+				96BF193527917A6C0005D1D4 /* CGMetalImageOutput.m in Sources */,
+				96BF192727917A6C0005D1D4 /* CGMetalWobble.m in Sources */,
+				96BF192D27917A6C0005D1D4 /* CGMetalZoom.m in Sources */,
+				96BF190F27917A6C0005D1D4 /* CGMetalBlendAlpha.m in Sources */,
+				96BF194827917A6C0005D1D4 /* CGMetalUIViewOutput.m in Sources */,
+				96BF18CF27917A6C0005D1D4 /* compute.metal in Sources */,
+				96BF193F27917A6C0005D1D4 /* CGMetalVideoOutput.m in Sources */,
+				96BF191F27917A6C0005D1D4 /* CGMetalRotate.metal in Sources */,
+				96BF18CA27917A6C0005D1D4 /* CGMetalDevice.m in Sources */,
+				96BF194427917A6C0005D1D4 /* CGMetalLayerOutput.m in Sources */,
+				96BF191127917A6C0005D1D4 /* CGMetalBasicFour.m in Sources */,
+				96BF18E027917A6C0005D1D4 /* CGMetalOutputter.m in Sources */,
+				96BF192327917A6C0005D1D4 /* CGMetalTranslation.m in Sources */,
+				96BF190C27917A6C0005D1D4 /* CGMetalBlendScaleAlpha.m in Sources */,
+				96BF193B27917A6C0005D1D4 /* CGMetalRawDataOutput.m in Sources */,
+				96BF191927917A6C0005D1D4 /* CGMetalFlipY.metal in Sources */,
+				96BF194527917A6C0005D1D4 /* CGMetalView.metal in Sources */,
+				96BF193D27917A6C0005D1D4 /* CGMetalOpenGLOutput.m in Sources */,
+				96BF192127917A6C0005D1D4 /* CGMetalFlipX.metal in Sources */,
+				96BF193027917A6C0005D1D4 /* CGMetalFlipY.m in Sources */,
+				96BF18E727917A6C0005D1D4 /* CGMetalTextureInput.m in Sources */,
+				96BF18FB27917A6C0005D1D4 /* CGMetalFlashWhite.m in Sources */,
+				96BF191B27917A6C0005D1D4 /* CGMetalProjection.metal in Sources */,
+				96BF194127917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.m in Sources */,
+				96BF191627917A6C0005D1D4 /* CGMetalBasicTwo.m in Sources */,
+				96BF18ED27917A6C0005D1D4 /* CGMetalRawDataInput.m in Sources */,
+				96BF193127917A6C0005D1D4 /* CGMetalTranslation.metal in Sources */,
+				96BF194027917A6C0005D1D4 /* CGMetalPixelBufferSurfaceOutput.metal in Sources */,
+				96BF192827917A6C0005D1D4 /* CGMetalZoom.metal in Sources */,
+				96BF190827917A6C0005D1D4 /* CGMetalGlitch.metal in Sources */,
+				96BF18EA27917A6C0005D1D4 /* CGMetalImageInput.m in Sources */,
+				96BF190127917A6C0005D1D4 /* CGMetalColour.m in Sources */,
+				96BF190927917A6C0005D1D4 /* CGMetalScaleAlpha.metal in Sources */,
+				96BF18FF27917A6C0005D1D4 /* CGMetalBlendAlpha.metal in Sources */,
+				96BF18F927917A6C0005D1D4 /* CGMetalFlashWhite.metal in Sources */,
+				96BF18CB27917A6C0005D1D4 /* CGMetalQueueContext.m in Sources */,
+				96BF190527917A6C0005D1D4 /* CGMetalShake.m in Sources */,
+				96BF190627917A6C0005D1D4 /* CGMetalColour.metal in Sources */,
+				96BF191527917A6C0005D1D4 /* CGMetalBasic.metal in Sources */,
+				96BF18FA27917A6C0005D1D4 /* CGMetalShake.metal in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9654C545277562860024386E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9654C546277562860024386E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9654C548277562860024386E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jason.CGMetal;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9654C549277562860024386E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = mh_dylib;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Jason.CGMetal;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9654C538277562860024386E /* Build configuration list for PBXProject "CGMetalOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9654C545277562860024386E /* Debug */,
+				9654C546277562860024386E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9654C547277562860024386E /* Build configuration list for PBXNativeTarget "CGMetalOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9654C548277562860024386E /* Debug */,
+				9654C549277562860024386E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9654C535277562860024386E /* Project object */;
+}

@@ -17,7 +17,23 @@
 		96BF1809278DB5620005D1D4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 96BF17FF278DB5620005D1D4 /* README.md */; };
 		96BF180A278DB5620005D1D4 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 96BF1805278DB5620005D1D4 /* LICENSE.txt */; };
 		96BF180B278DB5620005D1D4 /* MakeSingleHeader.py in Resources */ = {isa = PBXBuildFile; fileRef = 96BF1808278DB5620005D1D4 /* MakeSingleHeader.py */; };
+		96BF183A27917A310005D1D4 /* CGMetalOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF183927917A310005D1D4 /* CGMetalOS.framework */; };
+		96BF183B27917A310005D1D4 /* CGMetalOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 96BF183927917A310005D1D4 /* CGMetalOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		96BF183C27917A310005D1D4 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				96BF183B27917A310005D1D4 /* CGMetalOS.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		96BF1794278DB5480005D1D4 /* CGMetalC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CGMetalC.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +132,7 @@
 		96BF1805278DB5620005D1D4 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		96BF1807278DB5620005D1D4 /* Metal.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Metal.hpp; sourceTree = "<group>"; };
 		96BF1808278DB5620005D1D4 /* MakeSingleHeader.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = MakeSingleHeader.py; sourceTree = "<group>"; };
+		96BF183927917A310005D1D4 /* CGMetalOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = CGMetalOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +140,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96BF183A27917A310005D1D4 /* CGMetalOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +152,7 @@
 			children = (
 				96BF1796278DB5480005D1D4 /* CGMetalC */,
 				96BF1795278DB5480005D1D4 /* Products */,
+				96BF183827917A310005D1D4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -287,6 +306,14 @@
 			path = SingleHeader;
 			sourceTree = "<group>";
 		};
+		96BF183827917A310005D1D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				96BF183927917A310005D1D4 /* CGMetalOS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,6 +324,7 @@
 				96BF1790278DB5480005D1D4 /* Sources */,
 				96BF1791278DB5480005D1D4 /* Frameworks */,
 				96BF1792278DB5480005D1D4 /* Resources */,
+				96BF183C27917A310005D1D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
