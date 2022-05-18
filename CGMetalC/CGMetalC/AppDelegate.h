@@ -2,12 +2,12 @@
 //  AppDelegate.h
 //  CGMetalC
 //
-//  Created by 王腾飞 on 2022/1/11.
+//  Created by Jason on 2022/5/16.
 //
 
-#import <UIKit/UIKit.h>
+#import <Cocoa/Cocoa.h>
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : NSObject <NSApplicationDelegate>
 
 
 @end

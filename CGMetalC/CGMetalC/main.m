@@ -2,17 +2,14 @@
 //  main.m
 //  CGMetalC
 //
-//  Created by 王腾飞 on 2022/1/11.
+//  Created by Jason on 2022/5/16.
 //
 
-#import <UIKit/UIKit.h>
-#import "AppDelegate.h"
+#import <Cocoa/Cocoa.h>
 
-int main(int argc, char * argv[]) {
-    NSString * appDelegateClassName;
+int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // Setup code that might create autoreleased objects goes here.
-        appDelegateClassName = NSStringFromClass([AppDelegate class]);
     }
-    return UIApplicationMain(argc, argv, nil, appDelegateClassName);
+    return NSApplicationMain(argc, argv);
 }
