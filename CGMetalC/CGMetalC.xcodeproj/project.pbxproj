@@ -21,6 +21,7 @@
 		9687D9BA283236F800FCA89C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9687D9B4283236AE00FCA89C /* Foundation.framework */; };
 		9687D9BD2832371900FCA89C /* MetalMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9687D9BB2832371900FCA89C /* MetalMain.cpp */; };
 		9687D9C028323A0500FCA89C /* BasicFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9687D9BE28323A0500FCA89C /* BasicFilter.cpp */; };
+		96C5D7842835407B005AB1B5 /* CGMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D7832835407B005AB1B5 /* CGMetalView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -125,6 +126,8 @@
 		9687D9BC2832371900FCA89C /* MetalMain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalMain.hpp; sourceTree = "<group>"; };
 		9687D9BE28323A0500FCA89C /* BasicFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicFilter.cpp; sourceTree = "<group>"; };
 		9687D9BF28323A0500FCA89C /* BasicFilter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasicFilter.hpp; sourceTree = "<group>"; };
+		96C5D7822835407B005AB1B5 /* CGMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGMetalView.h; sourceTree = "<group>"; };
+		96C5D7832835407B005AB1B5 /* CGMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGMetalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +168,8 @@
 				9687D94328322D9200FCA89C /* AppDelegate.m */,
 				9687D94528322D9200FCA89C /* ViewController.h */,
 				9687D94628322D9200FCA89C /* ViewController.m */,
+				96C5D7822835407B005AB1B5 /* CGMetalView.h */,
+				96C5D7832835407B005AB1B5 /* CGMetalView.m */,
 				9687D9552832362400FCA89C /* MetalCplus.h */,
 				9687D9562832362400FCA89C /* MetalCplus.mm */,
 				9687D9BB2832371900FCA89C /* MetalMain.cpp */,
@@ -386,6 +391,7 @@
 			files = (
 				9687D9C028323A0500FCA89C /* BasicFilter.cpp in Sources */,
 				9687D94728322D9200FCA89C /* ViewController.m in Sources */,
+				96C5D7842835407B005AB1B5 /* CGMetalView.m in Sources */,
 				9687D9572832362400FCA89C /* MetalCplus.mm in Sources */,
 				9687D9BD2832371900FCA89C /* MetalMain.cpp in Sources */,
 				9687D94E28322D9300FCA89C /* main.m in Sources */,
