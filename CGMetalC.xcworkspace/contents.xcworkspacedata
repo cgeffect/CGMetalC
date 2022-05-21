@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:RenderingASceneWithDeferredLightingInCplusplus/DeferredLighting C++.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:CGMetalC/CGMetalC.xcodeproj">
    </FileRef>
    <FileRef

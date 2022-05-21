@@ -8,11 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		9687D94428322D9200FCA89C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9687D94328322D9200FCA89C /* AppDelegate.m */; };
-		9687D94728322D9200FCA89C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9687D94628322D9200FCA89C /* ViewController.m */; };
+		9687D94728322D9200FCA89C /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9687D94628322D9200FCA89C /* ViewController.mm */; };
 		9687D94928322D9300FCA89C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9687D94828322D9300FCA89C /* Assets.xcassets */; };
 		9687D94C28322D9300FCA89C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9687D94A28322D9300FCA89C /* Main.storyboard */; };
 		9687D94E28322D9300FCA89C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9687D94D28322D9300FCA89C /* main.m */; };
-		9687D9572832362400FCA89C /* MetalCplus.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9687D9562832362400FCA89C /* MetalCplus.mm */; };
 		9687D9B02832363600FCA89C /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 9687D9A72832363600FCA89C /* README.md */; };
 		9687D9B12832363600FCA89C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9687D9AD2832363600FCA89C /* LICENSE.txt */; };
 		9687D9B22832363600FCA89C /* MakeSingleHeader.py in Resources */ = {isa = PBXBuildFile; fileRef = 9687D9AF2832363600FCA89C /* MakeSingleHeader.py */; };
@@ -21,6 +20,7 @@
 		9687D9BA283236F800FCA89C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9687D9B4283236AE00FCA89C /* Foundation.framework */; };
 		9687D9BD2832371900FCA89C /* MetalMain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9687D9BB2832371900FCA89C /* MetalMain.cpp */; };
 		9687D9C028323A0500FCA89C /* BasicFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9687D9BE28323A0500FCA89C /* BasicFilter.cpp */; };
+		96B887FD283731620021DF7C /* CGRender.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 96B887FB283731620021DF7C /* CGRender.cpp */; };
 		96C5D7842835407B005AB1B5 /* CGMetalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 96C5D7832835407B005AB1B5 /* CGMetalView.m */; };
 /* End PBXBuildFile section */
 
@@ -29,13 +29,11 @@
 		9687D94228322D9200FCA89C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9687D94328322D9200FCA89C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9687D94528322D9200FCA89C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		9687D94628322D9200FCA89C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9687D94628322D9200FCA89C /* ViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
 		9687D94828322D9300FCA89C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9687D94B28322D9300FCA89C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9687D94D28322D9300FCA89C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9687D94F28322D9300FCA89C /* CGMetalC.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CGMetalC.entitlements; sourceTree = "<group>"; };
-		9687D9552832362400FCA89C /* MetalCplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MetalCplus.h; sourceTree = "<group>"; };
-		9687D9562832362400FCA89C /* MetalCplus.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = MetalCplus.mm; sourceTree = "<group>"; };
 		9687D95A2832363600FCA89C /* MTLTypes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLTypes.hpp; sourceTree = "<group>"; };
 		9687D95B2832363600FCA89C /* MTLResourceStateCommandEncoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLResourceStateCommandEncoder.hpp; sourceTree = "<group>"; };
 		9687D95C2832363600FCA89C /* MTLIndirectCommandEncoder.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MTLIndirectCommandEncoder.hpp; sourceTree = "<group>"; };
@@ -126,6 +124,9 @@
 		9687D9BC2832371900FCA89C /* MetalMain.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MetalMain.hpp; sourceTree = "<group>"; };
 		9687D9BE28323A0500FCA89C /* BasicFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BasicFilter.cpp; sourceTree = "<group>"; };
 		9687D9BF28323A0500FCA89C /* BasicFilter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BasicFilter.hpp; sourceTree = "<group>"; };
+		96B887FB283731620021DF7C /* CGRender.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CGRender.cpp; sourceTree = "<group>"; };
+		96B887FC283731620021DF7C /* CGRender.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CGRender.hpp; sourceTree = "<group>"; };
+		96B887FE2837442D0021DF7C /* CGMetalCplus.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGMetalCplus.h; sourceTree = "<group>"; };
 		96C5D7822835407B005AB1B5 /* CGMetalView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CGMetalView.h; sourceTree = "<group>"; };
 		96C5D7832835407B005AB1B5 /* CGMetalView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CGMetalView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -167,15 +168,16 @@
 				9687D94228322D9200FCA89C /* AppDelegate.h */,
 				9687D94328322D9200FCA89C /* AppDelegate.m */,
 				9687D94528322D9200FCA89C /* ViewController.h */,
-				9687D94628322D9200FCA89C /* ViewController.m */,
+				9687D94628322D9200FCA89C /* ViewController.mm */,
+				96B887FB283731620021DF7C /* CGRender.cpp */,
+				96B887FC283731620021DF7C /* CGRender.hpp */,
 				96C5D7822835407B005AB1B5 /* CGMetalView.h */,
 				96C5D7832835407B005AB1B5 /* CGMetalView.m */,
-				9687D9552832362400FCA89C /* MetalCplus.h */,
-				9687D9562832362400FCA89C /* MetalCplus.mm */,
 				9687D9BB2832371900FCA89C /* MetalMain.cpp */,
 				9687D9BC2832371900FCA89C /* MetalMain.hpp */,
 				9687D9BE28323A0500FCA89C /* BasicFilter.cpp */,
 				9687D9BF28323A0500FCA89C /* BasicFilter.hpp */,
+				96B887FE2837442D0021DF7C /* CGMetalCplus.h */,
 				9687D9582832363600FCA89C /* metal-cpp */,
 				9687D94828322D9300FCA89C /* Assets.xcassets */,
 				9687D94A28322D9300FCA89C /* Main.storyboard */,
@@ -390,9 +392,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9687D9C028323A0500FCA89C /* BasicFilter.cpp in Sources */,
-				9687D94728322D9200FCA89C /* ViewController.m in Sources */,
+				9687D94728322D9200FCA89C /* ViewController.mm in Sources */,
 				96C5D7842835407B005AB1B5 /* CGMetalView.m in Sources */,
-				9687D9572832362400FCA89C /* MetalCplus.mm in Sources */,
+				96B887FD283731620021DF7C /* CGRender.cpp in Sources */,
 				9687D9BD2832371900FCA89C /* MetalMain.cpp in Sources */,
 				9687D94E28322D9300FCA89C /* main.m in Sources */,
 				9687D94428322D9200FCA89C /* AppDelegate.m in Sources */,
